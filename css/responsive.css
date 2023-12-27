@@ -1,0 +1,61 @@
+/* 
+* MENU
+*/
+@media (min-width: 320px) and (max-width: 800px) {
+  nav {
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  #myMenu ul li a {
+    text-align: center;
+  }
+}
+
+/*
+    * BANNER
+*/
+
+@media (max-width: 991px) {
+
+    .button {
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    
+}
+
+.button outline {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 10px;
+  
+}
+
+  #banner .banner_cnt h4 {
+    font-size: 15px;  
+  }
+  #banner .banner_cnt h4 svg {
+    width: 16px;
+    height: 16px;
+  }
+  #banner .banner_cnt h1 {
+      font-size: 34px;
+    
+}
+
+  #banner .banner_img img {
+    max-width: 100%;
+  }
+}
+
+
+/* *ABOUT */
+
+
+@media (min-width:320px) and (max-width: 991px){
+    #about .about_img img{
+        max-width: 100%;
+        transform: scalex(-1);
+    }
+}

@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primaryFont: "Poppins", sans-serif;
+  --secondaryFont: "PT Sans", sans-serif;
+  --secondaryColor: #353535;
+  --primaryColor: #fc0;
+}
+
+/** COMMON CSS STARTS HERE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+span,
+ol {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--primaryFont);
+}
+.button {
+  padding: 16px 45px;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: var(--primaryColor);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 180%; /* 36px */
+  border: 1px solid var(--primaryColor);
+}
+.button.outline {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 18px;
+}
+
+/** COMMON CSS ENDS HERE */
+
+/* *NAV STARTS HERE */
+
+
+nav .navbar-toggler {
+  border: 0;
+  box-shadow: none !important;
+}
+
+#myMenu ul li a {
+  color: var(--secondaryColor);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 200%;
+  padding: 18px 22px 5px;
+  position: relative;
+}
+
+#myMenu ul li a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--secondaryColor);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+#myMenu ul li:hover a::after {
+  width: 100%;
+}
+
+/* *NAV ENDS HERE */
+
+/* *BANNER STARTS HERE */
+#banner {
+  padding: 72px 0 144px;
+}
+
+#banner .banner_cnt h4 {
+  color: var(--secondaryColor);
+  font-size: 24px;
+  font-weight: 400;
+}
+#banner .banner_cnt h1 {
+  color: var(--secondaryColor);
+  font-family: var(--secondaryFont);
+  font-size: 64px;
+  font-weight: 700;
+}
+#banner .banner_cnt p {
+  color: var(--secondaryColor);
+
+  font-size: 20px;
+
+  font-weight: 400;
+  line-height: 180%; /* 36px */
+  margin: 25px 0 45px;
+}
+#banner .banner_cnt .button {
+  margin-right: 40px;
+}
+#banner .social {
+  margin-top: 66px; 
+}
+#banner .social h4 {
+  color: #353535;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%; /* 39.6px */
+}
+
+#banner .social ul li {
+  display: inline-block;
+}
+
+#banner .social ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: lightblue;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+/* *BANNER ENDS HERE */
+
+
+/* *ABOUT STARTS HERE */
+#about{
+  background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+  
+}
+
+/* #about .container{
+  position: relative;
+}
+
+#about .circle{
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+} */
+
+#about .circle{
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+
+#about .container{
+  position: relative;
+}
+/* *ABOUT ENDS HERE */
+
+/* service start */
+
+#service{
+  padding-top: 110px;
+}
+
+.service_card .row{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+background: #FFF;
+width: 350px;
+height: 367px;
+flex-shrink: 0;
+}
+.service_card .row h5{
+  color: #353535;
+text-align: center;
+font-family: Poppins;
+font-size: 22px;
+line-height: 180%; /* 39.6px */
+}
+
+.service_card .row p{
+  color: #7A7A7A;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 190%; /* 30.4px */
+}
+
+#service .service_img{
+  padding-top: 50px;
+}
+
+/* service ends */
